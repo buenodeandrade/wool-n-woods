@@ -10,6 +10,10 @@ This project is a 2D game created with the Godot Engine. It features a playable 
 - **User Interface**: A starting menu that allows the player to start the game and a game over interface showing scores.
 - **Enemy Interaction**: The player can attack enemies, and enemies can damage the player.
 
+## Assets
+- [Tiny Swords - Pixel Frog](https://pixelfrog-assets.itch.io/tiny-swords)
+- [Particle Pack - Kenney](https://kenney.nl/assets/particle-pack)
+
 ## How to Play
 
 - **Starting Menu**: The game starts with a simple menu. Click the "Start!" button to begin playing.
