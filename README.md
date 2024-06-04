@@ -6,7 +6,7 @@ This project is a 2D game created with the Godot Engine. It features a playable 
 ## Preview
 
 You can play the game on itch.io by following this [link](https://br4u.itch.io/wool-n-woods).
-![image](https://github.com/buenodeandrade/wool-n-woods/assets/147355115/c8c13ae3-0673-488c-8aa5-bca82d4b053d)
+![image](https://github.com/buenodeandrade/wool-n-woods/assets/147355115/b322e8c5-f1a4-4b7e-a4a2-5247a317234d)
 
 ## Features
 
