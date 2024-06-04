@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbou8e17wno1a"]
+
+[ext_resource type="PackedScene" uid="uid://dwbwv0c55dmfg" path="res://enemies/goblin.tscn" id="1_ca3qn"]
+[ext_resource type="PackedScene" uid="uid://cnddbm2vmtqus" path="res://player/player.tscn" id="2_c4av2"]
+[ext_resource type="PackedScene" uid="uid://dx8q7jlr788q4" path="res://enemies/sheep.tscn" id="3_jdkbf"]
+[ext_resource type="PackedScene" uid="uid://b0gmuyvsy21kj" path="res://enemies/barrel.tscn" id="4_57t52"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Goblin" parent="." instance=ExtResource("1_ca3qn")]
+position = Vector2(874, 359)
+
+[node name="Player" parent="." instance=ExtResource("2_c4av2")]
+position = Vector2(370, 368)
+speed = 3.0
+sword_damage = 2
+ritual_damage = 1
+ritual_interval = 30.0
+health = 100
+max_health = 100
+
+[node name="Goblin2" parent="." instance=ExtResource("1_ca3qn")]
+position = Vector2(780, 546)
+
+[node name="Goblin4" parent="." instance=ExtResource("1_ca3qn")]
+position = Vector2(1028, 210)
+
+[node name="Sheep" parent="." instance=ExtResource("3_jdkbf")]
+position = Vector2(824, 110)
+
+[node name="Sheep2" parent="." instance=ExtResource("3_jdkbf")]
+position = Vector2(1048, 364)
+
+[node name="Sheep3" parent="." instance=ExtResource("3_jdkbf")]
+position = Vector2(60, 602)
+
+[node name="Sheep4" parent="." instance=ExtResource("3_jdkbf")]
+position = Vector2(1078, 590)
+
+[node name="Barrel" parent="." instance=ExtResource("4_57t52")]
+position = Vector2(956, 510)

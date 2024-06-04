@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3 uid="uid://ft6nk308p8ji"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_bow2c"]
+[ext_resource type="Texture2D" uid="uid://c2qnsq5xxoobn" path="res://addons/Screenshot.png" id="2_icoss"]
+[ext_resource type="Texture2D" uid="uid://cy1x85ogwx518" path="res://addons/Tiny Swords/UI/Ribbons/Ribbon_Red_3Slides.png" id="2_lldcb"]
+[ext_resource type="Texture2D" uid="uid://usggqvk67gcx" path="res://addons/Tiny Swords/UI/Banners/Carved_9Slides.png" id="3_hpsk5"]
+
+[sub_resource type="SystemFont" id="SystemFont_rxaxv"]
+font_weight = 999
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wjgir"]
+texture = ExtResource("2_lldcb")
+texture_margin_left = 64.0
+texture_margin_right = 64.0
+axis_stretch_horizontal = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_s8l1o"]
+font_size = 46
+font_color = Color(0.235662, 1.81994e-07, 8.42288e-08, 0.686275)
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bow2c")
+
+[node name="Screenshot" type="Sprite2D" parent="."]
+position = Vector2(576, 326)
+texture = ExtResource("2_icoss")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 1127.0
+offset_bottom = 625.0
+color = Color(1, 1, 1, 0.623529)
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 425.0
+offset_top = 312.0
+offset_right = 738.0
+offset_bottom = 579.998
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.196078, 0, 0, 0.945098)
+theme_override_colors/font_hover_color = Color(0.486275, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_rxaxv")
+theme_override_font_sizes/font_size = 44
+text = "START!"
+icon = ExtResource("3_hpsk5")
+flat = true
+clip_text = true
+icon_alignment = 1
+
+[node name="TopPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 365.0
+offset_top = 104.0
+offset_right = 803.0
+offset_bottom = 249.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wjgir")
+
+[node name="NewGameLabel" type="Label" parent="TopPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -27.5
+offset_right = 46.0
+offset_bottom = -4.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "NEW GAME"
+label_settings = SubResource("LabelSettings_s8l1o")
