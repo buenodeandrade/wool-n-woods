@@ -3,6 +3,11 @@ DIO challenge for the Creating Games with Godot certificate.
 
 This project is a 2D game created with the Godot Engine. It features a playable character with movement and attack mechanics, a point system, and a simple user interface with a starting menu.
 
+## Preview
+
+You can play the game on itch.io by following this [link](https://br4u.itch.io/wool-n-woods).
+![image](https://github.com/buenodeandrade/wool-n-woods/assets/147355115/c8c13ae3-0673-488c-8aa5-bca82d4b053d)
+
 ## Features
 
 - **2D Movement and Attacks**: The player can move in all four directions and perform attacks to the left, right, up, and down.
@@ -19,10 +24,6 @@ This project is a 2D game created with the Godot Engine. It features a playable 
 - **Starting Menu**: The game starts with a simple menu. Click the "Start!" button to begin playing.
 - **Movement**: Use the arrow keys or WASD to move the character.
 - **Attack**: Press the attack button (spacebar or mouse left-click) to attack in the direction the character is facing.
-
-## Preview
-
-You can play the game on itch.io by following this [link](https://br4u.itch.io/wool-n-woods).
 
 ## Future Improvements
 
